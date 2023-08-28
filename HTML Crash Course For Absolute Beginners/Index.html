@@ -80,33 +80,90 @@
 
 
 
-             </form>     
+          </form>     
 
-        <br> <!-- es como el break de word. como un enter-->
-        <hr> <!-- es horizontal rule es como una linea para cambiar de tema y separar cosas -->
-        <br>
+                 <br> <!-- es como el break de word. como un enter-->
+                 <hr> <!-- es horizontal rule es como una linea para cambiar de tema y separar cosas -->
+                 <br>
              
-             <form action="" method="post">  <!-- el atributo action se usa para llamar a una action en el codigo
+          <form action="mvc" method="post">  <!-- el atributo action se usa para llamar a una action en el codigo
                 por ejemplo process.php  it sumits the page to a page in the server (gotta research that) -->
           
-              <!-- el method es para indicar que request de http se hara en el back end     min 34--> 
+                <!-- el method es para indicar que request de http se hara en el back end     min 34--> 
                 <div>
                      <label> Name</label>
-                    <input type="text" name=""> <!-- el tipo indica el tipo de input y el nombre
+                    <input type="text" name="firstname" placeholder="enter first name"> <!-- el tipo indica el tipo de input y el nombre
                                             en el server side programing le da un nombre a ese
-                                            valor para poder tomarlo-->
+                                            valor para poder tomarlo, the placeholder thing puts place holder text
+                                              in the text field-->
                 </div>
                
-        <br>
+              <br>
 
                 <div>
                      <label> Name</label>
-                    <input type="text" name="">
-                </div>        
+                    <input type="text" name="lastname">
+                </div>   
+                
+              <br>
 
-            </form>
+                <div>
+                  <label> Email</label>
+                 <input type="email" name="email"> <!--with new html you can have this field and have so
+                                                    some validating without html-->
+               </div> 
+               
+              <br>
 
+                <div>
 
+                <label> Message</label>
+               <textarea name="message"></textarea> <!--basically creates a fillable text box-->
+
+               </div> 
+
+              <br>
+
+                <div>
+
+                <label> Gender</label>
+                <select name="gender">
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="other">other</option>
+                </select>
+
+                </div>
+                
+              <br>
+
+                <div>
+
+                <label> Age</label>
+                <input type="number" name="age" value="30"> <!--the value statment puts a predifined 
+                                                            value on the field-->
+               
+               </div> 
+
+              <br>
+
+                <div>
+
+                <label> Birthday</label>
+                <input type="date" name="Birthday" > 
+
+                </div> 
+
+              <br>
+                <input type="submit" name="submit" value="submit"> <!--creates a button to send the form, 
+                                                                  then the name it's how its actualy called
+                                                                  and the value is the text displayed-->
+
+           </form>
+
+           <!--these were buttons inside a form but there can also be buttons outside a form-->
+           <!--buttons-->
+           <button>Click Me</button> <!--they usually don't do nothing unless you use javascript-->
 
         </body>
 
