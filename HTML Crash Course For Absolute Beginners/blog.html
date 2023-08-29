@@ -4,12 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Awesome blog by Gerald"> <!--la etiqueta meta es para meter metadata
+                                                                a la pagina web para ayudar/alterar como 
+                                                                esta es indexada en el buscador de google.
+                                                                Se pone una descripcion y palabras claves
+                                                                de busqueda.
+                                                                La propiedad content es una lista separada
+                                                                por comas.-->
+    <meta name="keywords" content="web design blog, wev dev blog, company name">                                                                
     <title>My blog</title>
+    <style>
+        #main-header{
+            text-align: center;
+            background-color: black;
+            color: white;
+            padding: 10px;
+        }
+
+        #main-footer{
+            text-align: center;
+            font-size: 18px;
+        }
+    </style>
 </head>
 <body>
-    <header> 
+    <header id="main-header"> <!--se pueden tener varios header y footer segun como se quiera hacer la
+                            pag, aveces se usa como titulo de un post-->
         <h1>My website</h1>
     </header>
+
+    <a href="Index.html">Go to Index.</a>
 
     <section>
         <article class="Post">
@@ -75,8 +99,9 @@
             </nav>    
     </aside>
 
-    <footer>
-        
+    <footer id="main-footer">
+        <p>Copyright &copy; 2017, My website</p> <!--html tiene varios simbolos los cuales para usarlos
+                                                tienen su sintaxis, este es el simbolo de coporight-->
     </footer>
 
 </body>
