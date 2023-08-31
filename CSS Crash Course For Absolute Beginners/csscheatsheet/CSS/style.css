@@ -1,0 +1,20 @@
+body{
+    background-color: #f4f4f4;
+    color: #7c7272;
+    font-family: Arial, Helvetica, sans-serif; /* theres web safe fonts which dont need to be imported */
+    font-size: 18px;
+    font-weight: normal;
+    font: normal 16px Arial, Helvetica, sans-serif; /* esto es una forma mas resumida para 
+                                                    poner negrita y tipo de letra */
+    line-height: 1.6em; /* esto es para la separacion entre oraciones */
+    margin:0; /*keep in mind that headers have margin by default*/
+}
+
+.container{
+    width: 500px;
+}
+
+.box-1{
+    background-color: #333;
+    color: white
+}
