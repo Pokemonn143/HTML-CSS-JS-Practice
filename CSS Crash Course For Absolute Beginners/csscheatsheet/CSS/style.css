@@ -1,3 +1,37 @@
+/*
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a esto se le llama el reset, se aplica en todos los elementos
+
+*/
+
+a{ /*this is a global setting change for all links links are on the a element, links have diferrent
+    states which can be changed*/
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{ /*state*/
+
+    color:red;
+
+}
+
+a:active{ /*state, esto es cuando se le da click al link que cambia de color brevemente*/
+
+    color:green;
+
+}
+
+/*a:visited{
+    color:yellow;
+}
+*/
+
 body{
     background-color: #f4f4f4;
     color: #7c7272;
@@ -11,10 +45,68 @@ body{
 }
 
 .container{
-    width: 500px;
+    width: 500px;   /*es el ancho de un elemento*/
+                    /*si se usa pixeles se vuelve rigido y no cambio de tamaño segun se manipula la pes
+                    taña, es mejor usar un % instead*/
+    margin: auto; /*pone un margen automatico en todos los lados, el margen es el espacio entre elementos*/
 }
 
 .box-1{
     background-color: #333;
-    color: white
+    color: white;
+    border-right: 5px red solid;
+    border-left: 5px red solid;
+    border-top: 5px red solid;
+    border-bottom: 5px red solid;
+    /*same as above*/
+    border: 5px red solid;
+    border-width: 3px;
+    border-bottom-width: 10px;
+    border-top-style: dotted;
+
+    padding-top: 20px;
+    padding: 20px;
+
+    margin: 20px 0; /*el margen es el espacio fuera del borde*/
+}
+
+.box-1 h1 {
+    font-family: tahoma;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    word-spacing: 1em;
+}
+
+.box-2 {
+    border: 3px dotted lightgray;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.categories{ /* esto es lo que esta alrededor de la lista */
+    border: 1px black solid;
+    padding: 10px;
+    border-radius: 15px; /*esyo le da redondes a los elementos*/
+}
+
+.categories h2{ /*haciendo enfoque al texto h2*/
+    text-align: center;
+}
+
+.categories ul{ /* the list has some padding by default*/
+
+    padding: 0;
+    padding-left: 20px;
+    list-style: square;
+    list-style: none;
+}
+
+.categories li{
+    padding-bottom: 6px; /*padidng para cada elemento de la lista*/
+    border-bottom: dotted 1px lightseagreen;
+    list-style-image: url('../Images/thumbs-up.jpg');
+
 }
