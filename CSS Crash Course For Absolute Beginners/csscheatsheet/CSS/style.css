@@ -51,6 +51,20 @@ body{
     margin: auto; /*pone un margen automatico en todos los lados, el margen es el espacio entre elementos*/
 }
 
+.button{
+
+    background-color: darkgray;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    
+    }
+
+.button:hover{
+    background-color: red;
+    color: white;
+}
+
 .box-1{
     background-color: #333;
     color: white;
@@ -107,6 +121,47 @@ body{
 .categories li{
     padding-bottom: 6px; /*padidng para cada elemento de la lista*/
     border-bottom: dotted 1px lightseagreen;
-    list-style-image: url('../Images/thumbs-up.jpg');
+    list-style-image: url('../Images/checkmark.png');
 
 }
+
+.my-form{
+    padding: 20px;
+}
+
+.my-form .form-group{ /*se puede llamar a una clase dentro de otra clase interesante...*/
+
+ padding-bottom: 15px;
+
+}
+
+.my-form label{
+
+display: block; /*esto lo que hace es cambiarlo de inline (sobre linea) a block/bloque, los elementos de bloque
+                tienen un salto de linea automaticamente. asi se evita poner un break*/
+
+
+}
+
+.my-form input[type="text"], .my-form textarea{ /*esta etiqueta lo que hace es que especifica el tipo de input que afectara, aqui
+                            solo esta afectando a los campos de tipo texto, si no se pone esto afectaria el diseño
+                            del boton el cual tambien es un input*/
+
+                            /*con la coma se puede poner otra clase para ponerle las mismas reglas*/
+
+pad: 8px;
+width: 100%;
+
+}  /*min 51:28*/
+
+/*
+.my-form input[type="submit"]{
+
+background-color: darkgray;
+color: white;
+padding: 10px 15px;
+border: none;
+
+}
+
+*/
