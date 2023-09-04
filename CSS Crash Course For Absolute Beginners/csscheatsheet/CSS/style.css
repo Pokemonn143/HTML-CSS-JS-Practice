@@ -65,6 +65,10 @@ body{
     color: white;
 }
 
+.clr{
+    clear: both;
+}
+
 .box-1{
     background-color: #333;
     color: white;
@@ -152,8 +156,79 @@ display: block; /*esto lo que hace es cambiarlo de inline (sobre linea) a block/
 pad: 8px;
 width: 100%;
 
-}  /*min 51:28*/
+}
 
+.block { /*floating practice*/
+    float: left;
+    width: 33.3%; /*se puso de este largo porque habian 3 elementos*/
+    border: 1px solid black;
+    padding: 10px;
+    box-sizing: border-box; /*esto se pone debido a que al poner el borde y el padding como el
+                            tamaño estaba al justo. la agregarle eso hacia que los elementos se
+                            muevan de lugar. al poner el pox-sizing igual al borde de la caja
+                            resuelve esa problematica.
+                            
+                            box sizing permite agregar el padding y el borde al tamaño total
+                            del elemento*/
+}
+
+#main-block { /* se usa # para llamar a un elemento con id asignado*/
+
+    float: left;
+    width: 70%;
+    padding:  15px;
+    box-sizing: border-box;
+
+}
+
+#sidebar { /* se usa # para llamar a un elemento con id asignado*/
+
+    float: right;
+    width: 30%;
+    background-color: #333;
+    color: white;
+    padding:  15px;
+    box-sizing: border-box;
+
+}
+
+.p-box{
+    width: 800px;
+    height: 500px;
+    border: 1px solid black;
+    margin-top: 30px;
+    position: relative; /*al poner esto en este contenedor se evita que al cambiar la position de un elemento
+                        este tome el documento html completamente en vez del contenedor que se*/
+    background-image: url('../Images/tiger.jpg'); /*eso es para poner una omagen de fondo al contenedor*/
+    background-repeat: no-repeat;
+    background-position: 100px 200px;
+    background-position: center top;
+}
+
+.p-box h1{
+ 
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    
+}
+
+.p-box h2{
+
+    position: absolute;
+    bottom: 40px;
+    right: 100px;
+
+}    
+
+.fix-me{
+
+    position: fixed; /* hace que el elemento se mantenga en pantalla aun si se scrollea la pagina
+                     se puede usar para poner links de redes sociales o poner una barra de navegacion
+                     que siempre se quede al hacer scroll. */
+    top: 400px;
+
+}
 /*
 .my-form input[type="submit"]{
 
