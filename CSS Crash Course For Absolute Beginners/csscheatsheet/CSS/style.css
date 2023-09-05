@@ -229,6 +229,35 @@ width: 100%;
     top: 400px;
 
 }
+
+.my-list li:first-child{ /*esto se llama pseudo clase, en este caso de usa para afectar al primer 
+                        elemento li dentro de ul llamado hijo/child*/
+
+    background: red;
+
+}
+
+.my-list li:last-child{ /*esto se llama pseudo clase, en este caso de usa para afectar al ultimo 
+    elemento li dentro de ul llamado hijo/child*/
+
+background: blue;
+
+}
+
+.my-list li:nth-child(5){ /*esto se llama pseudo clase, en este caso de usa para afectar 5to
+    elemento li dentro de ul llamado hijo/child*/
+
+background: yellow;
+
+}
+
+.my-list li:nth-child(even){ /*esto se llama pseudo clase, en este caso de usa para afectar a los
+    elementos pares li dentro de ul llamado hijo/child*/
+
+background: darkgray;
+
+}
+
 /*
 .my-form input[type="submit"]{
 
