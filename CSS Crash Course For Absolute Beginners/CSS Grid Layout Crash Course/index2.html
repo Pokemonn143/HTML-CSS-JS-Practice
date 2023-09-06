@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>CSS Grid</title>
+
+    <style>
+
+     .wrapper{
+
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr; /*esto es una fracccion, para asuntos de gris se recomienda
+                                            usar esta metrica en vez de porcentajes o pixeles para no tener
+                                            problemas con padding y nesting se puede usar ambien el repeat
+                                            (# de veces, 1fr o 1fr 2fr para repetir intercalado)*/
+        grid-gap: 1em;
+        /*grid-auto-rows: 100px;*/
+        grid-auto-rows: minmax(100px auto);/*esto aparenta servir para poner un tamaño minimo y hacer que el
+                                            maximo sea automatico para que se baña agrandando segun haya
+                                            mas contenido*/
+
+     }   
+
+    .wrapper div{
+
+    background: rgb(201, 201, 201);
+    padding: 1em;
+    }
+
+    .wrapper div:nth-child(odd){
+
+    background: rgb(231, 228, 228);
+
+    }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper"> <!--se puede crear un div rapido al poner . + nombre de clase y dandole a tab-->
+
+    <div>
+        Lorem ipsum dolor sit. <!--se puede seleccionar un texto y darle a tab para moverlo todo-->
+    </div>
+
+    <div>
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit hic provident
+        accusamus porro. Repudiandae velit doloribus eaque illo voluptates asperiores nostrum
+         ipsa impedit autem ipsum quisquam atque cupiditate magni possimus amet modi cum 
+         accusantium voluptatem culpa exercitationem, ratione, reprehenderit, adipisci illum.
+          Quidem consectetur dolorum perspiciatis porro, reiciendis sit inventore. Quibusdam
+           necessitatibus et unde hic adipisci, sequi iusto nam consequuntur, beatae harum,
+            velit iure natus dolore! Ipsa et fugit dolorem, expedita iusto incidunt non quis
+             consequuntur laboriosam doloribus odit, cupiditate accusantium?
+    </div>
+
+    <div>
+        Lorem ipsum dolor sit.
+    </div>
+
+    <div>
+        Lorem ipsum dolor sit.
+    </div>
+
+    <div>
+        Lorem ipsum dolor sit.
+    </div>
+
+    
+    <div>
+        Lorem ipsum dolor sit.
+    </div>
+    
+    <div>
+        Lorem ipsum dolor sit.
+    </div>
+    
+
+    </div> 
+</body>
+</html>

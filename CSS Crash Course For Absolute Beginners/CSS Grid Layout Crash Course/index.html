@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grids</title>
+    <style>
+
+        .wrapper{
+
+            display: grid; /*esto parece ser para dar una estructura de grid fija a un contenedor/wrapper
+                            se pueden poner mas valores para crear mas columnas, segun se ponen divs
+                            en este wrapper se van distribuyendo en columnas automaticamente*/
+            grid-template-columns: 70% 30%;
+            grid-column-gap: 1em;
+            grid-row-gap: 1em; /*grid-gap funciona para aplicarlo a los 4 lados como el padding y eso*/
+
+        }
+
+        .wrapper div{
+
+            background: rgb(201, 201, 201);
+            padding: 1em;
+        }
+
+        .wrapper div:nth-child(odd){
+
+            background: rgb(231, 228, 228);
+
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="wrapper">
+
+        <div> <!--el lorem se puede poner lorem# para poner el tamaño del dummy text-->
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis porro, 
+            suscipit, officia maiores quos vero, fuga enim ex doloremque neque eum. Sequi
+             dolores modi iure non nihil provident adipisci consequatur beatae accusantium.
+              Voluptatibus sed itaque labore magnam earum, nesciunt iste accusantium dolor
+               repellat quae, tenetur nam atque quisquam maiores voluptas ipsum, consequuntur
+                suscipit sunt necessitatibus consectetur? Eligendi quos facere sed neque veniam
+                illum natus itaque exercitationem voluptatem aliquid accusamus hic, molestias veritati
+                s repudiandae voluptatibus quisquam nemo. Nobis sapiente doloremque reprehenderit!
+
+        </div>
+
+        <div>
+
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et corporis dolor, 
+            quia eveniet repellendus debitis nostrum odio sunt, doloremque adipisci aspernatur.
+             Maiores officiis voluptatem ea id unde eligendi, facilis libero?
+
+        </div>
+
+        <div> <!--el lorem se puede poner lorem# para poner el tamaño del dummy text-->
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis porro, 
+            suscipit, officia maiores quos vero, fuga enim ex doloremque neque eum. Sequi
+             dolores modi iure non nihil provident adipisci consequatur beatae accusantium.
+              Voluptatibus sed itaque labore magnam earum, nesciunt iste accusantium dolor
+               repellat quae, tenetur nam atque quisquam maiores voluptas ipsum, consequuntur
+                suscipit sunt necessitatibus consectetur? Eligendi quos facere sed neque veniam
+                illum natus itaque exercitationem voluptatem aliquid accusamus hic, molestias veritati
+                s repudiandae voluptatibus quisquam nemo. Nobis sapiente doloremque reprehenderit!
+
+        </div>
+
+        <div>
+
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et corporis dolor, 
+            quia eveniet repellendus debitis nostrum odio sunt, doloremque adipisci aspernatur.
+             Maiores officiis voluptatem ea id unde eligendi, facilis libero?
+
+        </div>
+
+    </div>
+
+</body>
+</html>
