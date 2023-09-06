@@ -117,3 +117,7 @@ list-style: none;
     }
 
 }
+
+/* tener pendiente que los elementos de linea solo tienen margenes a los lados, y la propiedad margin auto
+solo funciona si se le pone una medida previamente a un elemento de bloque, porque este ocupa todo el espacio
+por default*/
