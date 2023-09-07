@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>CSS Grid</title>
+
+    <style>
+
+     .wrapper{
+
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr; /*esto es una fracccion, para asuntos de gris se recomienda
+                                            usar esta metrica en vez de porcentajes o pixeles para no tener
+                                            problemas con padding y nesting se puede usar ambien el repeat
+                                            (# de veces, 1fr o 1fr 2fr para repetir intercalado)*/
+        grid-auto-rows: minmax(100px, auto);
+        grid-gap: 1em;
+        justify-items: stretch; /*estas dos propiedades reducen el objeto de forma simetrtica de distintas
+                                formas, el comportamiento default es estirar. justify afecta los lados
+                                y aling afecta de arriba a abajo*/
+        align-items: stretch;
+     }   
+
+    .wrapper div{
+
+    background: rgb(201, 201, 201);
+    padding: 1em;
+    }
+
+    .wrapper div:nth-child(odd){
+
+    background: rgb(231, 228, 228);
+
+    }
+
+   .box1{
+    /*align-self: start;*/
+    grid-column: 1/3; /*esto es una forma de aumentarle el tamaño a los elementos de un grid teniendo encuenta
+                        de que cada linea tiene una numeracion, de arria hacia abajo y hacia los lados
+                        uno puede darle un tamaño en base a esos lugares del grid, en este ejemplo se
+                        esta diciendo que ocupe de la linea 1 a la linea 3*/
+    grid-row: 1/3;
+   }
+
+   .box2{
+    /*align-self: end;*/
+    grid-column: 3;
+    grid-row: 1/3;
+   }
+
+   .box3{
+    /*justify-self: end;*/
+    grid-column: 2/4;
+    grid-row: 3;
+   }
+
+   .box4{ /*you can overlap things with this line thing using grids*/
+    grid-column: 1;
+    grid-row: 2/4;
+    border: 1px solid black;
+   }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper"> <!--se puede crear un div rapido al poner . + nombre de clase y dandole a tab-->
+
+        <div class="box box1">Box 1</div>
+        <div class="box box2">Box 2</div>
+        <div class="box box3">Box 3</div>
+        <div class="box box4">Box 4</div>
+        
+
+    </div> <!--wrapper-->
+</body>
+</html>
